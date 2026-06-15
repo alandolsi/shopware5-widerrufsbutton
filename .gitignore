@@ -1,0 +1,20 @@
+# Shopware build artefacts
+/Resources/views/frontend/_public/src/css/*.min.css
+
+# Test / tooling artefacts
+.playwright-mcp/
+*.png
+!plugin.png
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Local notes / dumps (never commit customer data)
+*.sql
+*.sql.gz
+*.sql.zip
+/tmp/

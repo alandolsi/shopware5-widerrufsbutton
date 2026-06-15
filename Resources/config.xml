@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/config.xsd">
+
+    <elements>
+        <element type="text" scope="shop">
+            <name>notificationEmail</name>
+            <label lang="de">Benachrichtigungs-E-Mail (optional)</label>
+            <label lang="en">Notification e-mail (optional)</label>
+            <value></value>
+            <description lang="de">An diese Adresse werden eingehende Widerrufe gemeldet. Leer lassen = Standard-Shop-E-Mail.</description>
+            <description lang="en">Incoming withdrawals are reported to this address. Leave empty to use the shop e-mail.</description>
+        </element>
+    </elements>
+</config>

@@ -1,0 +1,15 @@
+.landolsi-widerruf { margin: 20px 0; }
+.landolsi-widerruf--intro { margin-bottom: 20px; }
+.landolsi-widerruf--field { margin-bottom: 15px; }
+.landolsi-widerruf--label { display: block; font-weight: 600; margin-bottom: 5px; }
+.landolsi-widerruf--input { width: 100%; }
+.landolsi-widerruf--input.has--error { border-color: #e52207; }
+.landolsi-widerruf--error { display: block; margin-top: 4px; color: #e52207; font-size: 12px; }
+.landolsi-widerruf--hint { margin: 10px 0 0; color: #5f7285; font-size: 13px; }
+.landolsi-widerruf--actions { margin-top: 25px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.landolsi-widerruf--summary dt { font-weight: 600; margin-top: 12px; }
+.landolsi-widerruf--summary dd { margin: 0 0 6px; }
+
+/* Footer button (§ 356a "Schaltfläche") — make it a prominent button, not a plain link */
+.landolsi-widerruf--footer-entry { margin-top: 12px; list-style: none; }
+.landolsi-widerruf--footer-btn { display: inline-block; white-space: normal; }

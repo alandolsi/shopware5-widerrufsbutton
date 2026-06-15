@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
+
+    <label lang="de">Widerrufsbutton (§ 356a BGB)</label>
+    <label lang="en">Right-of-withdrawal button (§ 356a BGB)</label>
+
+    <version>1.0.0</version>
+    <copyright>Landolsi Webdesign</copyright>
+    <license>MIT</license>
+    <author>Landolsi Webdesign</author>
+    <link>https://landolsi.de</link>
+
+    <compatibility minVersion="5.6.0" maxVersion="5.7.99"/>
+
+    <description lang="de"><![CDATA[
+        Stellt einen gesetzlich vorgeschriebenen Widerrufsbutton bereit (Pflicht ab 19.06.2026, § 356a BGB n.F.):
+        ein gut sichtbarer Footer-Button "Vertrag widerrufen", der ohne Login erreichbar ist, ein Widerrufsformular
+        (Name, Bestell-/Vertragskennung, E-Mail; kein Widerrufsgrund), eine Bestätigungsstufe ("Widerruf bestätigen")
+        sowie eine automatische Eingangsbestätigung per E-Mail mit Datum und Uhrzeit. Eingegangene Widerrufe werden
+        zur Dokumentation gespeichert.
+
+        Hinweis: Dieses Plugin ist eine technische Hilfe und ersetzt keine Rechtsberatung.
+
+        --
+        Entwickler: Landolsi Webdesign
+        Webseite & Support: https://landolsi.de
+        Support-E-Mail: abdellatif@landolsi.de
+        Quellcode / Issues: https://github.com/alandolsi/shopware5-widerrufsbutton
+    ]]></description>
+    <description lang="en"><![CDATA[
+        Provides the legally required right-of-withdrawal button (mandatory from 2026-06-19, § 356a German Civil Code).
+    ]]></description>
+
+    <changelog version="1.0.0">
+        <changes lang="de">Erste Version: Footer-Button, Widerrufsformular, Bestätigungsstufe, Eingangsbestätigung per E-Mail, Speicherung der Widerrufe.</changes>
+        <changes lang="en">Initial release.</changes>
+    </changelog>
+</plugin>

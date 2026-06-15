@@ -1,0 +1,30 @@
+{
+    "name": "landolsi/shopware5-widerrufsbutton",
+    "description": "Shopware 5 plugin: legally required right-of-withdrawal button (Widerrufsbutton, § 356a BGB, mandatory from 2026-06-19).",
+    "version": "1.0.0",
+    "type": "shopware-plugin",
+    "license": "MIT",
+    "homepage": "https://landolsi.de",
+    "authors": [
+        { "name": "Landolsi Webdesign", "email": "abdellatif@landolsi.de", "homepage": "https://landolsi.de" }
+    ],
+    "support": {
+        "email": "abdellatif@landolsi.de",
+        "issues": "https://github.com/alandolsi/shopware5-widerrufsbutton/issues",
+        "source": "https://github.com/alandolsi/shopware5-widerrufsbutton"
+    },
+    "require": {
+        "php": ">=7.2",
+        "shopware/core": "~5.6"
+    },
+    "extra": {
+        "shopware-plugin-class": "LandolsiWiderrufsbutton\\LandolsiWiderrufsbutton",
+        "label": {
+            "de": "Widerrufsbutton (§ 356a BGB)",
+            "en": "Right-of-withdrawal button (§ 356a BGB)"
+        }
+    },
+    "autoload": {
+        "psr-4": { "LandolsiWiderrufsbutton\\": "" }
+    }
+}
