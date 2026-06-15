@@ -29,7 +29,9 @@ class Frontend implements SubscriberInterface
     {
         return [
             'Enlight_Controller_Action_PreDispatch_Frontend' => 'onPreDispatchFrontend',
+            'Theme_Inheritance_Template_Directories_Collected' => 'onCollectTemplateDirs',
             'Theme_Compiler_Collect_Plugin_Css' => 'onCollectCss',
+            'Theme_Compiler_Collect_Plugin_Javascript' => 'onCollectJavascript',
         ];
     }
 
@@ -40,10 +42,32 @@ class Frontend implements SubscriberInterface
         $controller->View()->addTemplateDir($this->pluginDir . '/Resources/views/');
     }
 
+    /**
+     * Registers the plugin's view directory at the FRONT of the theme inheritance so that
+     * template extensions ({extends file="parent:..."}) take precedence over the active theme —
+     * required for themes that override footer templates (e.g. CleanTheme's footer_typ_1.tpl),
+     * which are pulled in via {include} and otherwise resolve to the theme's own version first.
+     */
+    public function onCollectTemplateDirs(Enlight_Event_EventArgs $args)
+    {
+        $dirs = $args->getReturn();
+        array_unshift($dirs, $this->pluginDir . '/Resources/views/');
+
+        return $dirs;
+    }
+
     public function onCollectCss()
     {
         $collection = new ArrayCollection();
         $collection->add($this->pluginDir . '/Resources/views/frontend/_public/src/css/widerruf.css');
+
+        return $collection;
+    }
+
+    public function onCollectJavascript()
+    {
+        $collection = new ArrayCollection();
+        $collection->add($this->pluginDir . '/Resources/views/frontend/_public/src/js/widerruf.js');
 
         return $collection;
     }

@@ -15,6 +15,16 @@ use Shopware\Components\Plugin\Context\UninstallContext;
  */
 class LandolsiWiderrufsbutton extends Plugin
 {
+    /**
+     * Register the plugin's Resources/views in the theme inheritance so template
+     * extensions ({extends file="parent:..."}) work — also for themes that override
+     * footer templates (e.g. CleanTheme's footer_typ_1.tpl).
+     */
+    public function hasAutoloadViews(): bool
+    {
+        return true;
+    }
+
     public function install(InstallContext $context)
     {
         $this->createDatabaseSchema();
