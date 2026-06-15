@@ -23,7 +23,7 @@ a.landolsi-widerruf--footer-btn,
     display: inline-block !important;
     margin-top: 6px;
     padding: 9px 18px !important;
-    background-color: #2563eb !important;
+    background-color: #05b3d4 !important;
     color: #ffffff !important;
     border: 0 !important;
     border-radius: 4px !important;
@@ -34,10 +34,12 @@ a.landolsi-widerruf--footer-btn,
     white-space: normal;
     cursor: pointer;
 }
+/* no hover effect: keep the button identical on hover/focus */
 a.landolsi-widerruf--footer-btn:hover,
 a.landolsi-widerruf--footer-btn:focus,
-.footer--column a.landolsi-widerruf--footer-btn:hover {
-    background-color: #1d4ed8 !important;
+.footer--column a.landolsi-widerruf--footer-btn:hover,
+.footer--column a.landolsi-widerruf--footer-btn:focus {
+    background-color: #05b3d4 !important;
     color: #ffffff !important;
     text-decoration: none !important;
 }
