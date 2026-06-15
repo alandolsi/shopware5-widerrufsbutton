@@ -12,7 +12,12 @@
 
 /* Footer button (§ 356a "Schaltfläche") — self-contained button styling so it looks like a
    real button on ANY theme (some themes break .btn/.is--primary -> black on black). */
-.landolsi-widerruf--footer-entry { margin-top: 12px; list-style: none; }
+.landolsi-widerruf--footer-entry { margin-top: 12px; list-style: none !important; }
+/* hide theme bullet (CleanTheme adds a ::before marker to footer list items) */
+.landolsi-widerruf--footer-entry::before {
+    display: none !important;
+    content: none !important;
+}
 a.landolsi-widerruf--footer-btn,
 .footer--column a.landolsi-widerruf--footer-btn {
     display: inline-block !important;
