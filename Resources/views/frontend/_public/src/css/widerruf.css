@@ -10,6 +10,29 @@
 .landolsi-widerruf--summary dt { font-weight: 600; margin-top: 12px; }
 .landolsi-widerruf--summary dd { margin: 0 0 6px; }
 
-/* Footer button (§ 356a "Schaltfläche") — make it a prominent button, not a plain link */
+/* Footer button (§ 356a "Schaltfläche") — self-contained button styling so it looks like a
+   real button on ANY theme (some themes break .btn/.is--primary -> black on black). */
 .landolsi-widerruf--footer-entry { margin-top: 12px; list-style: none; }
-.landolsi-widerruf--footer-btn { display: inline-block; white-space: normal; }
+a.landolsi-widerruf--footer-btn,
+.footer--column a.landolsi-widerruf--footer-btn {
+    display: inline-block !important;
+    margin-top: 6px;
+    padding: 9px 18px !important;
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+    border: 0 !important;
+    border-radius: 4px !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    text-align: center;
+    text-decoration: none !important;
+    white-space: normal;
+    cursor: pointer;
+}
+a.landolsi-widerruf--footer-btn:hover,
+a.landolsi-widerruf--footer-btn:focus,
+.footer--column a.landolsi-widerruf--footer-btn:hover {
+    background-color: #1d4ed8 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
